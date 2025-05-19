@@ -1,0 +1,37 @@
+@host = http://localhost:3001
+
+### 🔹 Obtener todos los autores
+GET {{host}}/api/authors
+
+### 🔹 Obtener un autor por ID
+GET {{host}}/api/authors/1
+
+### 🔹 Crear un nuevo autor
+POST {{host}}/api/authors
+Content-Type: application/json
+
+{
+  "name": "Ana López",
+  "email": "ana.lopez@example.com",
+  "image": "https://i.pravatar.cc/150?img=4"
+}
+
+### 🔹 Obtener los posts de un autor
+GET {{host}}/api/authors/1/posts
+
+### 🔹 Obtener todos los posts
+GET {{host}}/api/posts
+
+### 🔹 Obtener un post por ID
+GET {{host}}/api/posts/2
+
+### 🔹 Crear un nuevo post
+POST {{host}}/api/posts
+Content-Type: application/json
+
+{
+  "title": "Nuevos hooks en React",
+  "description": "Exploramos los hooks avanzados en React 18 y cómo optimizan el rendimiento.",
+  "category": "React",
+  "author_id": 1
+}
