@@ -162,7 +162,7 @@ http://localhost:3001/api/posts
 ![Nuevo Post](docs/img/3-POS-createPost.png)
 
 ### Posts de un autor
-![Posts de un autor](docs/img/4-AUT-postsAutor.png)
+![Posts de un autor](docs/img/4-AUT-postAutor.png)
 
 ## Estructura del proyecto
 
