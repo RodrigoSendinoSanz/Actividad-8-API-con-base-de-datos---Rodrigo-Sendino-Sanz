@@ -21,7 +21,7 @@ exports.create = async (req, res) => {
 };
 
 
-// controllers/authors.js (añadir al final)
+// controllers/authors.js
 exports.getPosts = async (req, res) => {
   const [rows] = await req.db.query(`
     SELECT p.*, a.name AS author_name, a.email AS author_email, a.image AS author_image
